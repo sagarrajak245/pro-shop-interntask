@@ -5,27 +5,27 @@ import connectDB from './db.js';
 import cartRoutes from './routes/cartRoutes.js';
 import productRoutes from './routes/productRoutes.js';
 
-// Load environment variables
 dotenv.config();
-
-// Connect to MongoDB
 connectDB();
 
 const app = express();
 
-// Middleware
-app.use(cors()); // Enable Cross-Origin Resource Sharing
-app.use(express.json()); // To parse JSON bodies
+// --- CORS Configuration for Production ---
+// This tells your server to only accept requests from your live frontend.
+const corsOptions = {
+    origin: 'https://pro-shop-interntask-frontend.onrender.com/',
+    optionsSuccessStatus: 200
+};
+app.use(cors(corsOptions));
 
-// Basic route
+app.use(express.json());
+
 app.get('/', (req, res) => {
-    res.send('API is running sagar...');
+    res.send('API is running...');
 });
 
-// API routes
 app.use('/api/products', productRoutes);
 app.use('/api/cart', cartRoutes);
 
 const PORT = process.env.PORT || 5001;
-app.listen(PORT, console.log(`Server running in ${process.env.NODE_ENV || 'development'} mode on port ${PORT}`));
-
+app.listen(PORT, console.log(`Server running on port ${PORT}`)); 
