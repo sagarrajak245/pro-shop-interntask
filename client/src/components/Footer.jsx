@@ -10,13 +10,13 @@ const Footer = () => {
                         <p className="mt-2 text-sm text-slate-900">Your one-stop shop for endless deals.</p>
                     </div>
                     <div className="flex space-x-4">
-                        <a href="#" className="text-slate-800 hover:text-amber-500 dark:text-gray-400 dark:hover:text-yellow-400 transition-colors">
+                        <a href="#" className="text-slate-800 hover:text-amber-500  dark:hover:text-pink-500 transition-colors">
                             <Github size={24} />
                         </a>
-                        <a href="#" className="text-slate-800 hover:text-amber-500 dark:text-gray-400 dark:hover:text-yellow-400 transition-colors">
+                        <a href="#" className="text-slate-800 hover:text-amber-500  dark:hover:text-pink-500 transition-colors">
                             <Twitter size={24} />
                         </a>
-                        <a href="#" className="text-slate-800 hover:text-amber-500 dark:text-gray-400 dark:hover:text-yellow-400 transition-colors">
+                        <a href="#" className="text-slate-800 hover:text-amber-500  dark:hover:text-pink-500 transition-colors">
                             <Instagram size={24} />
                         </a>
                     </div>
