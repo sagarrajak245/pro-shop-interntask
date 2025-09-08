@@ -5,7 +5,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon --no-daemon server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
