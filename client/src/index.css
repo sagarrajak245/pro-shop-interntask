@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* Define your custom theme variables for Tailwind v4 */
+@theme {
+  --color-anti-flash-white: #ECECEC;
+  --color-cream: #FFFEB1;
+  --color-seasalt: #FAFAFA;
+  --color-lavender-web: #E2DEFF;
+  --color-tea-rose: #FCCCCC;
+  --color-glass-white: rgba(255, 255, 255, 0.5);
+}
+
+/* Global styles using CSS custom properties directly */
+body {
+  background-color: var(--color-anti-flash-white);
+  color: #333;
+}
